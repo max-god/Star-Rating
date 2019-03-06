@@ -1,2 +1,2 @@
 # Star Rating
->Custom **Star Rating** using **Font Awesome** and **Bootstrap**
+>Custom **Star Rating** built with **Font Awesome** and **Bootstrap**
