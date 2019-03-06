@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Food Rating</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Food Rating</h1>
+    <div class="container mt-5">
+        <div class="form-group">
+            <select id="product-select" class="form-control custom-select">
+                <option value="0" disabled selected>Select Food</option>
+                <option value="pizza">Pizza</option>
+                <option value="burger">Burger</option>
+                <option value="taco">Taco</option>
+                <option value="sandwich">Sandwich</option>
+                <option value="waffles">Waffles</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="number" id="rating-control" class="form-control" step="0.1" max="5" placeholder="Rate 1 - 5" disabled>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Food</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="pizza">
+                    <td>Pizza</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="burger">
+                    <td>Burger</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"
+                            ></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="taco">
+                    <td>Taco</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"
+                            ></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="sandwich">
+                    <td>Sandwich</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"
+                            ></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="waffles">
+                    <td>Waffles</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"
+                            ></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
